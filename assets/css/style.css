@@ -1,0 +1,11 @@
+body {
+	background-image: url(../images/trains.jpg);
+}
+.jumbotron {
+	background-color: red;
+	border: 15px inset black;
+}
+.panel-title, .button {
+	border: 5px inset black;
+	background-color: red;
+}
