@@ -55,11 +55,14 @@
         console.log(firstTrainTime);
         console.log(frequency);
 
-        var firstTrainTimeNice = moment.unix(firstTrainTime).format("HH:mm a")
+        var firstTrainTimeNice = moment().diff(moment.unix(firstTrainTime).format("HH:mm");
 
-        var nextArrival = moment.unix
+        var nextArrival = moment().add(moment.unix(firstTrainTime, "HH:mm"), % frequency;
+        console.log(nextArrival)
 
-        var minutesAway = moment.unix
+        var minutesAway = frequency - nextArrival;
+
+        
 
         $("#train-schedule > tbody").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency + 
                                     "</td><td>" + nextArrival + "</td><td>" + minutesAway + "</td></tr>");
@@ -75,3 +78,11 @@
         $("#frequency-display").html(snapshot.val().frequency);
 
     });
+
+    // Time Math
+    // train start time 3:00
+    // train frequency 20 min
+    // add frequency to start time = next arrival
+
+    // next arrival minus current time 
+    // will = minutes away
